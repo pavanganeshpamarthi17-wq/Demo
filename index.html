@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Carter — Frontend Developer & UI Designer. Building modern digital experiences that convert visitors into customers." />
+  <meta name="keywords" content="frontend developer, UI designer, web design, React, Next.js, portfolio" />
+  <meta property="og:title" content="Alex Carter — Frontend Developer & UI Designer" />
+  <meta property="og:description" content="Building modern digital experiences that convert visitors into customers." />
+  <title>Alex Carter — Frontend Developer & UI Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     LOADER
+══════════════════════════════════════════ -->
+<div id="loader" role="status" aria-label="Loading">
+  <div class="loader-inner">
+    <div class="loader-logo"><span class="grad">AC</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">Alex Carter</a>
+
+    <ul class="nav-links">
+      <li><a href="#hero"          class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-greeting reveal">
+          👋 Available for new projects
+        </div>
+
+        <h1 class="display reveal reveal-delay-1">
+          Frontend Developer &amp; UI Designer Creating
+          <span class="grad"> High-Converting</span>
+          Digital Experiences
+        </h1>
+
+        <p class="body-lg reveal reveal-delay-2">
+          Passionate about crafting pixel-perfect, performant interfaces that don't just look great — they drive real results for your business.
+        </p>
+
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 10l-4 4L7 10"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact Me →</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <div class="num"><span data-target="50">0</span>+</div>
+            <div class="txt">Projects Done</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num"><span data-target="25">0</span>+</div>
+            <div class="txt">Happy Clients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num"><span data-target="5">0</span>+</div>
+            <div class="txt">Years Exp.</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num"><span data-target="100">0</span>%</div>
+            <div class="txt">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <div class="hero-img-border"></div>
+          <div class="hero-img">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=680&q=80&auto=format&fit=crop"
+              alt="Alex Carter — Frontend Developer"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Floating badges -->
+          <div class="float-badge badge-exp">
+            <div class="icon">🏆</div>
+            <div class="badge-text">
+              <div class="top">Experience</div>
+              <div class="bot">5+ Years</div>
+            </div>
+          </div>
+          <div class="float-badge badge-proj">
+            <div class="icon">🚀</div>
+            <div class="badge-text">
+              <div class="top">Projects</div>
+              <div class="bot">50+ Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Image side -->
+      <div class="about-img-wrap reveal-left">
+        <div class="about-img">
+          <img
+            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=640&q=80&auto=format&fit=crop"
+            alt="Alex Carter working"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-accent"></div>
+      </div>
+
+      <!-- Content side -->
+      <div class="about-content reveal-right">
+        <div>
+          <span class="label">Who I Am</span>
+          <h2 class="h2" style="margin-top:10px;">Turning ideas into <span class="grad">memorable</span> digital products</h2>
+          <div class="divider divider-left" style="margin-top:14px;margin-bottom:20px;"></div>
+        </div>
+
+        <p class="about-text">
+          Hi, I'm Alex — a frontend developer and UI designer with 5+ years of experience building beautiful, fast, and conversion-optimized websites. I bridge the gap between design and engineering, delivering products that look stunning and perform flawlessly.
+        </p>
+        <p class="about-text" style="margin-top:12px;">
+          I've worked with startups, agencies, and established businesses across e-commerce, SaaS, and real estate — always with a focus on clean code, thoughtful UX, and measurable outcomes.
+        </p>
+
+        <div class="about-cards" style="margin-top:28px;">
+          <div class="about-card">
+            <div class="ac-icon">🎯</div>
+            <div>
+              <div class="ac-num grad">5+</div>
+              <div class="ac-lbl">Years Experience</div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="ac-icon">😊</div>
+            <div>
+              <div class="ac-num grad">25+</div>
+              <div class="ac-lbl">Happy Clients</div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="ac-icon">⚡</div>
+            <div>
+              <div class="ac-num grad">15+</div>
+              <div class="ac-lbl">Technologies</div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="ac-icon">🛡️</div>
+            <div>
+              <div class="ac-num grad">24/7</div>
+              <div class="ac-lbl">Support</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+          <a href="#projects" class="btn btn-ghost">View Portfolio</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SKILLS — BENTO GRID
+══════════════════════════════════════════ -->
+<section id="skills" class="section" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">My Expertise</span>
+      <h2 class="h2">Skills &amp; Technologies</h2>
+      <div class="divider"></div>
+      <p class="body-lg" style="margin-top:16px;">
+        A curated toolkit built through years of real-world projects — from pixel-perfect UIs to blazing-fast production apps.
+      </p>
+    </div>
+
+    <div class="bento-grid reveal">
+
+      <!-- Large feature cell: Frontend stack -->
+      <div class="bento-cell bc-wide bc-featured">
+        <div class="bento-glow"></div>
+        <div class="bento-cell-inner">
+          <div>
+            <div class="bc-label">Core Stack</div>
+            <div class="bc-title">Frontend Development</div>
+            <div class="bc-desc" style="margin-top:6px;">Architecting scalable, accessible, and performant web interfaces with modern frameworks.</div>
+          </div>
+          <div class="skill-chips">
+            <span class="chip accent">HTML5</span>
+            <span class="chip accent">CSS3</span>
+            <span class="chip accent">JavaScript</span>
+            <span class="chip accent">TypeScript</span>
+            <span class="chip accent">React</span>
+            <span class="chip accent">Next.js</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">GraphQL</span>
+            <span class="chip">Webpack</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tall: satisfaction -->
+      <div class="bento-cell bc-tall" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+        <div class="bento-glow" style="background:radial-gradient(circle,rgba(139,92,246,0.2),transparent 70%);top:auto;bottom:-40px;right:auto;left:-40px;"></div>
+        <div class="big-pct grad2">100%</div>
+        <div class="pct-sub">Client Satisfaction<br/>across 50+ projects</div>
+        <div style="margin-top:24px;">
+          <div class="chip accent" style="margin:0 auto;">⭐ Top Rated</div>
+        </div>
+      </div>
+
+      <!-- Medium: Design tools -->
+      <div class="bento-cell bc-med">
+        <div class="bc-label">Design</div>
+        <div class="bc-title">UI / UX</div>
+        <div class="skill-icon-grid" style="margin-top:16px;">
+          <div class="si-item"><div class="si-ico">🎨</div><div class="si-lbl">Figma</div></div>
+          <div class="si-item"><div class="si-ico">📐</div><div class="si-lbl">Wireframe</div></div>
+          <div class="si-item"><div class="si-ico">🖌️</div><div class="si-lbl">Prototyping</div></div>
+          <div class="si-item"><div class="si-ico">📊</div><div class="si-lbl">Research</div></div>
+          <div class="si-item"><div class="si-ico">📱</div><div class="si-lbl">Mobile</div></div>
+          <div class="si-item"><div class="si-ico">🧩</div><div class="si-lbl">Systems</div></div>
+        </div>
+      </div>
+
+      <!-- Small: CSS -->
+      <div class="bento-cell bc-small">
+        <div class="bc-label">Styling</div>
+        <div class="bc-title" style="font-size:1rem;margin-bottom:12px;">CSS Frameworks</div>
+        <div class="skill-chips">
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Sass / SCSS</span>
+          <span class="chip">CSS Modules</span>
+        </div>
+      </div>
+
+      <!-- Square: Tools -->
+      <div class="bento-cell bc-sq">
+        <div class="bc-label">Workflow</div>
+        <div class="bc-title" style="margin-bottom:14px;">Dev Tools</div>
+        <div class="skill-chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Vercel</span>
+          <span class="chip">Netlify</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Docker</span>
+        </div>
+      </div>
+
+      <!-- Full-width: Performance -->
+      <div class="bento-cell bc-full" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+        <div>
+          <div class="bc-label">Performance</div>
+          <div class="bc-title">Lighthouse-Optimized Delivery</div>
+        </div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;">
+          <div style="text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;" class="grad">98</div>
+            <div style="font-size:0.72rem;color:var(--muted);">Performance</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;" class="grad">100</div>
+            <div style="font-size:0.72rem;color:var(--muted);">Accessibility</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;" class="grad">100</div>
+            <div style="font-size:0.72rem;color:var(--muted);">Best Practices</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;" class="grad">95</div>
+            <div style="font-size:0.72rem;color:var(--muted);">SEO Score</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Featured Work</span>
+      <h2 class="h2">Projects That Deliver Results</h2>
+      <div class="divider"></div>
+      <p class="body-lg" style="margin-top:16px;">
+        A selection of projects spanning e-commerce, SaaS, real estate, and agencies — each built with precision and purpose.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1557821552-17105176677c?w=720&q=75&auto=format&fit=crop"
+            alt="E-Commerce Platform"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">E-Commerce</div>
+        </div>
+        <div class="project-body">
+          <h3>E-Commerce Platform</h3>
+          <p>A full-featured online storefront with seamless checkout, real-time inventory, and a 40% conversion lift post-launch.</p>
+          <div class="project-stack">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">Stripe</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=720&q=75&auto=format&fit=crop"
+            alt="SaaS Analytics Dashboard"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">SaaS</div>
+        </div>
+        <div class="project-body">
+          <h3>SaaS Analytics Dashboard</h3>
+          <p>Data-rich admin dashboard with interactive charts, real-time metrics, and a clean design system built for scale.</p>
+          <div class="project-stack">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Recharts</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=720&q=75&auto=format&fit=crop"
+            alt="Fitness Landing Page"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">Landing Page</div>
+        </div>
+        <div class="project-body">
+          <h3>Fitness Landing Page</h3>
+          <p>High-energy fitness brand page with bold typography, parallax animations, and a 28% sign-up conversion rate.</p>
+          <div class="project-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">GSAP</span>
+            <span class="tech-tag">Netlify</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=720&q=75&auto=format&fit=crop"
+            alt="Developer Portfolio"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">Portfolio</div>
+        </div>
+        <div class="project-body">
+          <h3>Developer Portfolio</h3>
+          <p>Award-worthy personal portfolio with glassmorphism, scroll-driven animations, and 98/100 Lighthouse score.</p>
+          <div class="project-stack">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Framer Motion</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=720&q=75&auto=format&fit=crop"
+            alt="Real Estate Website"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">Real Estate</div>
+        </div>
+        <div class="project-body">
+          <h3>Real Estate Website</h3>
+          <p>Luxury property listing platform with map integration, advanced filters, and a virtual tour viewer.</p>
+          <div class="project-stack">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Mapbox</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-img">
+          <img
+            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=720&q=75&auto=format&fit=crop"
+            alt="Agency Landing Page"
+            loading="lazy"
+          />
+          <div class="project-overlay"></div>
+          <div class="project-tag">Agency</div>
+        </div>
+        <div class="project-body">
+          <h3>Agency Landing Page</h3>
+          <p>Bold creative agency site with cinematic scroll transitions, WebGL effects, and a 35% lead gen improvement.</p>
+          <div class="project-stack">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Three.js</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">Sanity</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="#" class="btn btn-ghost btn-sm">Source</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════ -->
+<section id="services" class="section" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">What I Offer</span>
+      <h2 class="h2">Services Built for Growth</h2>
+      <div class="divider"></div>
+      <p class="body-lg" style="margin-top:16px;">
+        From concept to launch — everything you need to establish a powerful digital presence.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚀</div>
+        <h3>Landing Page Design</h3>
+        <p>High-converting, mobile-first landing pages engineered to capture attention and drive sign-ups, leads, or sales from day one.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">💼</div>
+        <h3>Portfolio Websites</h3>
+        <p>Personal brand portfolios that tell your story, showcase your best work, and open doors to better clients and opportunities.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🏢</div>
+        <h3>Business Websites</h3>
+        <p>Professional multi-page websites that build trust, communicate your value, and convert browsers into paying customers.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3>Responsive Redesign</h3>
+        <p>Breathing new life into outdated websites — modernized design, improved mobile UX, and faster performance across all devices.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Research-driven design systems, wireframes, and interactive Figma prototypes that align your team before a single line of code is written.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">⚡</div>
+        <h3>Website Optimization</h3>
+        <p>Core Web Vitals tuning, image compression, lazy loading, and code splitting — boosting speed, SEO rankings, and user retention.</p>
+        <div class="service-arrow">Get started <span>→</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Client Stories</span>
+      <h2 class="h2">What People Say</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="testimonials-wrap reveal">
+      <div class="testimonials-track">
+
+        <!-- Slide 1 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="t-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="t-quote">
+              "Alex completely transformed our online presence. The new website loads in under 1.5 seconds, looks absolutely stunning on every device, and our lead generation has increased by 60% since launch. Genuinely one of the best investments we've made."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&q=80&auto=format&fit=crop" alt="Sarah Johnson" loading="lazy"/>
+              </div>
+              <div>
+                <div class="t-name">Sarah Johnson</div>
+                <div class="t-role">CEO, BrightPath Digital</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="t-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="t-quote">
+              "Professional, creative, and incredibly reliable. Alex delivered our SaaS dashboard two days ahead of schedule with zero bugs. The attention to detail — especially the micro-animations and data visualizations — genuinely impressed our whole engineering team."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&q=80&auto=format&fit=crop" alt="Michael Brown" loading="lazy"/>
+              </div>
+              <div>
+                <div class="t-name">Michael Brown</div>
+                <div class="t-role">CTO, Stackify Labs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="t-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="t-quote">
+              "Outstanding work and communication throughout the entire project. Alex took our rough Figma mockups and turned them into a flawless, pixel-perfect website. Our bounce rate dropped by 45% and clients constantly compliment how the site looks and feels."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&q=80&auto=format&fit=crop" alt="Emma Wilson" loading="lazy"/>
+              </div>
+              <div>
+                <div class="t-name">Emma Wilson</div>
+                <div class="t-role">Founder, Studio Novo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="t-controls">
+        <button class="t-btn" id="t-prev" aria-label="Previous testimonial">←</button>
+        <div class="t-dots">
+          <div class="t-dot active"></div>
+          <div class="t-dot"></div>
+          <div class="t-dot"></div>
+        </div>
+        <button class="t-btn" id="t-next" aria-label="Next testimonial">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ACHIEVEMENTS
+══════════════════════════════════════════ -->
+<section id="achievements" class="section-sm">
+  <div class="container">
+    <div class="achievements-grid reveal">
+      <div class="ach-card">
+        <div class="ach-num grad"><span data-target="50">0</span>+</div>
+        <div class="ach-lbl">Projects Completed</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-num grad"><span data-target="25">0</span>+</div>
+        <div class="ach-lbl">Happy Clients</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-num grad"><span data-target="5">0</span>+</div>
+        <div class="ach-lbl">Years Experience</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-num grad"><span data-target="15">0</span>+</div>
+        <div class="ach-lbl">Technologies</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Get In Touch</span>
+      <h2 class="h2">Ready to Build Something Great?</h2>
+      <div class="divider"></div>
+      <p class="body-lg" style="margin-top:16px;">
+        Have a project in mind? Let's talk. I typically respond within 12 hours.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-info reveal-left">
+        <div>
+          <h3 class="h3" style="margin-bottom:8px;">Let's Connect</h3>
+          <p class="body-sm">Whether you need a landing page, a full redesign, or a custom web app — I'm here to help turn your vision into reality.</p>
+        </div>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-lbl">Email</div>
+              <div class="ci-val">hello@alexcarter.dev</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-lbl">Phone</div>
+              <div class="ci-val">+1 (555) 012-3456</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-lbl">Location</div>
+              <div class="ci-val">San Francisco, CA — Remote Worldwide</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="body-sm" style="margin-bottom:12px;">Find me on:</p>
+          <div class="social-row">
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter/X">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Dribbble">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.017-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4.006-.814zm-11.62-2.073c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.176zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.805 0-1.59.107-2.4.288zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.386z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal-right">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Full Name</label>
+              <input type="text" id="f-name" name="name" placeholder="John Smith" autocomplete="name" />
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input type="email" id="f-email" name="email" placeholder="john@company.com" autocomplete="email" />
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Subject</label>
+            <input type="text" id="f-subject" name="subject" placeholder="Landing page design for my startup" />
+            <span class="form-error" id="err-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Tell me about your project, timeline, and budget..."></textarea>
+            <span class="form-error" id="err-message"></span>
+          </div>
+          <div id="form-success" class="form-success">
+            ✅ Message sent! I'll get back to you within 12 hours.
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">Alex Carter</a>
+        <p>Frontend Developer & UI Designer building modern digital experiences that convert visitors into customers.</p>
+        <div class="social-row" style="margin-top:16px;">
+          <a href="#" class="social-btn" aria-label="GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Landing Pages</a></li>
+          <li><a href="#services">Portfolio Sites</a></li>
+          <li><a href="#services">UI/UX Design</a></li>
+          <li><a href="#services">Optimization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@alexcarter.dev">hello@alexcarter.dev</a></li>
+          <li><a href="tel:+15550123456">+1 (555) 012-3456</a></li>
+          <li><a href="#contact">Hire Me</a></li>
+          <li><a href="#contact">Free Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Alex Carter. Crafted with ♥ and strong coffee.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="GitHub" style="width:36px;height:36px;border-radius:8px;">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
