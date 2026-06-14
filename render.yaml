@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: portfolio-website
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: "."
